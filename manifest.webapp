@@ -1,0 +1,16 @@
+{
+  "default_locale": "ja",
+  "description": "Flappy birdのクローンアプリです。",
+  "developer": {
+    "name": "yoshii",
+    "url": "http://uhero.co.jp/"
+  },
+  "icons": {
+    "128": "/image/icon.png"
+  },
+  "launch_path": "/index.html",
+  "name": "flappy",
+  "type": "web",
+  "version": "1.0.0",
+  "csp": "'default-src' *;'script-src' 'self';'object-src' 'none';'frame-src' 'self';'style-src' 'unsafe-inline' 'self';'connect-src'"
+}
