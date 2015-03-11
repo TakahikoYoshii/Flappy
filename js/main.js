@@ -28,8 +28,8 @@ var ASSETS = {
     "player_off": "image/player_off.png",
     "bg": "image/bg.jpg",
     "ground": "image/ground.jpg",
-    "pipe": "image/pipe.jpg",
-    "PIPE": "image/pipe.jpg"
+    "pipe": "image/pipe.png",
+    "PIPE": "image/pipe.png"
 };
 
 // ラベルのリスト
