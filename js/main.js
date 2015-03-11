@@ -332,18 +332,18 @@ tm.define("mainScene", {
         }
         //リトライ
         this.btnRetry = tm.ui.FlatButton({
-            width: 150,
-            height: 45,
+            width: 360,
+            height: 180,
             text: "リトライ",
             bgColor: "blue",
-            fontSize: 35
+            fontSize: 40
         }).addChildTo(this).on("pointingend", function (e) {
 //            window.location.reload();
             SCORE = 0;
             e.app.fps = FPS;
             e.app.replaceScene(mainScene());
         });
-        this.btnRetry.setPosition(125, 110);
+        this.btnRetry.setPosition(SCREEN_CENTER_X, SCREEN_CENTER_Y);
     }
 });
 
