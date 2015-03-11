@@ -331,19 +331,17 @@ tm.define("mainScene", {
             this.PIPE[pipe].stop();
         }
         //リトライ
-        this.btnRetry = tm.ui.FlatButton({
+        tm.ui.FlatButton({
             width: 360,
             height: 180,
             text: "リトライ",
             bgColor: "blue",
             fontSize: 40
         }).addChildTo(this).on("pointingend", function (e) {
-//            window.location.reload();
             SCORE = 0;
             e.app.fps = FPS;
             e.app.replaceScene(mainScene());
-        });
-        this.btnRetry.setPosition(SCREEN_CENTER_X, SCREEN_CENTER_Y);
+        }).setPosition(SCREEN_CENTER_X, SCREEN_CENTER_Y);
     }
 });
 
