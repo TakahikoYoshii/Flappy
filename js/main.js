@@ -28,8 +28,8 @@ var ASSETS = {
     "player_off": "image/player_off.png",
     "bg": "image/bg.jpg",
     "ground": "image/ground.jpg",
-    "pipe": "image/pipe.jpg",
-    "PIPE": "image/pipe.jpg"
+    "pipe": "image/pipe.png",
+    "PIPE": "image/pipe.png"
 };
 
 // ラベルのリスト
@@ -331,19 +331,17 @@ tm.define("mainScene", {
             this.PIPE[pipe].stop();
         }
         //リトライ
-        this.btnRetry = tm.ui.FlatButton({
-            width: 150,
-            height: 45,
+        tm.ui.FlatButton({
+            width: 360,
+            height: 180,
             text: "リトライ",
             bgColor: "blue",
-            fontSize: 35
+            fontSize: 40
         }).addChildTo(this).on("pointingend", function (e) {
-//            window.location.reload();
             SCORE = 0;
             e.app.fps = FPS;
             e.app.replaceScene(mainScene());
-        });
-        this.btnRetry.setPosition(125, 110);
+        }).setPosition(SCREEN_CENTER_X, SCREEN_CENTER_Y);
     }
 });
 
