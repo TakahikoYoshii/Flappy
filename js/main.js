@@ -222,17 +222,21 @@ tm.define("mainScene", {
 
         // 左矢印キーを押しているかを判定
         if (key.getKey("left")) {
-            // 移動
-            this.player.x -= 8;
-            // 向き調整
-            this.player.scaleX = 0.8;
+            if (this.lives) {
+                // 移動
+                this.player.x -= 8;
+                // 向き調整
+                this.player.scaleX = 0.8;
+            }
         }
         // 右矢印キーを押しているかを判定
         if (key.getKey("right")) {
-            // 移動
-            this.player.x += 8;
-            // 向き調整
-            this.player.scaleX = -0.8;
+            if (this.lives) {
+                // 移動
+                this.player.x += 8;
+                // 向き調整
+                this.player.scaleX = -0.8;
+            }
         }
 
         // タッチしているかを判定
