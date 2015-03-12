@@ -334,10 +334,10 @@ tm.define("mainScene", {
         tm.ui.FlatButton({
             width: 360,
             height: 180,
-            text: "リトライ",
-            bgColor: "blue",
+            text: "RETRY",
+            bgColor: "#ff8c00",
             fontSize: 40
-        }).addChildTo(this).on("pointingend", function (e) {
+	        }).setFillStyle("#ff8c00").addChildTo(this).on("pointingend", function (e) {
             SCORE = 0;
             e.app.fps = FPS;
             e.app.replaceScene(mainScene());
